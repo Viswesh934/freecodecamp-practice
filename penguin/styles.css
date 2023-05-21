@@ -1,0 +1,136 @@
+#image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 8px;
+  
+   
+  }
+  
+   h1{
+     font-family: serif;
+     
+     color:powder blue;
+     text-align: center;
+     animation: animate 4.0s linear infinite;
+   }
+    
+    
+   @keyframes animate{
+     0%{
+       opacity: 0;
+     }
+     50%{
+       opacity: 0.7;
+     }
+     100%{
+       opacity: 0;
+     }
+   }
+    section{
+    
+    position: relative;
+    
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Alex+Brush|Merienda');
+  
+  @-webkit-keyframes card-shift {
+   0% {
+    -webkit-transform:translate3d(-30px,0,0);
+    transform:translate3d(-30px,0,0)
+   }
+   25% {
+    -webkit-transform:translate3d(0,-30px,0);
+    transform:translate3d(0,-30px,0)
+   }
+   50% {
+    -webkit-transform:translate3d(0,-30px,0);
+    transform:translate3d(0,-30px,0)
+   }
+   75% {
+    -webkit-transform:translate3d(-30px,0,0);
+    transform:translate3d(-30px,0,0)
+   }
+   to {
+    -webkit-transform:translate3d(-30px,0,0);
+    transform:translate3d(-30px,0,0)
+   }
+  }
+  @keyframes card-shift {
+   0% {
+    -webkit-transform:translate3d(-30px,0,0);
+    transform:translate3d(-30px,0,0)
+   }
+   25% {
+    -webkit-transform:translate3d(0,-30px,0);
+    transform:translate3d(0,-30px,0)
+   }
+   50% {
+    -webkit-transform:translate3d(0,-30px,0);
+    transform:translate3d(0,-30px,0)
+   }
+   75% {
+    -webkit-transform:translate3d(-30px,0,0);
+    transform:translate3d(-30px,0,0)
+   }
+   to {
+    -webkit-transform:translate3d(-30px,0,0);
+    transform:translate3d(-30px,0,0)
+   }
+  }
+  
+  body {
+    background-color:powder blue;
+    margin:0;
+    padding:0;
+  }
+  
+  .card-wrapper {
+    overflow: hidden;
+    display: block;
+    height: 900px; 
+    position: relative;
+  
+    
+   
+   
+  }
+  body {
+    background-color:powder blue;
+    position: absolute;
+    z-index: -1;
+    background: rgba(blue,.6);
+    background: -webkit-linear-gradient(top, rgba(#103d85, .6), rgba(#451f49,.8) 62%, rgba(#5b2911,.4) 99%);
+    background-image: linear-gradient(180deg, rgba(#103d85, .6), rgba(#451f49,.8) 62%, rgba(#5b2911,.4) 99%);
+    
+  }
+  .tex {
+    height: calc(100% + 30px);
+    width: calc(100% + 30px);
+    -webkit-animation: card-shift 12s ease-in-out infinite;
+    animation: card-shift 2s ease-in-out infinite;
+    position: absolute;
+    z-index: 3;
+    top:14000;
+    left:1200;
+    right: 12000;
+    bottom: 15200;
+    margin-right: 100px;
+    text-align: center;
+    padding:100px;
+    
+  }
+  
+
+  
